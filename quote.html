@@ -1,0 +1,219 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <style>
+		.container{
+			margin-top: 20px;
+		}
+		.card-columns {
+			
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Новости</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-primary">
+		<a class="navbar-brand" href="mutant.html">
+			<img src="lolol.jpg" class="bg-dark" alt="Logo" style="width:40px;">
+		</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="mutant.html">Новости <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="quote.html">Катировки</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="stokexchange.html">Биржа</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="events.html">События</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="report.html">Финансовый отсчет</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="aboutus.html">О нас</a>
+            </li>
+        </ul>
+    </div>
+    <a href="SingIn.php" class="btn text-white btn-lg" role="button" aria-pressed="true">Профиль</a>    
+</nav>
+	<div id="example-table"></div>
+	
+	<div class="container">
+<table class="table table-sm table-primary">
+	<thead>
+	<tr>
+		<th scope="col"></th>
+		<th scope="col">Name</th>
+		<th scope="col">Token</th>
+		<th scope="col">Usd</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th scope="row">1</th>
+		<td class="text-danger">Apple</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+		
+	</tr>
+	<tr>
+		<th scope="row">2</th>
+		<td class="text-danger">Google</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+	</tr>
+	<tr>
+		<th scope="row">3</th>
+		<td class="text-danger">Amason</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+	</tr>
+	<tr>
+		<th scope="row">4</th>
+		<td class="text-danger">Microsoft</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+		
+	</tr>
+	<tr>
+		<th scope="row">5</th>
+		<td class="text-danger">Saudi Aramco</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+		
+	</tr>
+	<tr>
+		<th scope="row">6</th>
+		<td class="text-danger">Alphabet</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+		
+	</tr>
+	<tr>
+		<th scope="row">7</th>
+		<td class="text-danger">Alibaba</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+	
+	</tr>
+	<tr>
+		<th scope="row">8</th>
+		<td class="text-danger">Facebook</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+		
+	</tr>
+	<tr>
+		<th scope="row">9</th>
+		<td class="text-danger">Tencent</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+		
+	</tr>
+	<tr>
+		<th scope="row">10</th>
+		<td class="text-danger">Berkshire Hathaway</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+		
+	</tr>
+	<tr>
+		<th scope="row">11</th>
+		<td class="text-danger">Johnson&Johnson</td>
+		<td class="text-success">up</td>
+		<td class="text-success">up</td>
+		
+	</tr>
+	
+	</tbody>
+</table>
+</div>
+	
+	<script>
+		var tabledata = [
+	{id:1, name:"Oli Bob", progress:12, gender:"male", rating:1, col:"red", dob:"19/02/1984", car:1},
+    {id:2, name:"Mary May", progress:1, gender:"female", rating:2, col:"blue", dob:"14/05/1982", car:true},
+    {id:3, name:"Christine Lobowski", progress:42, gender:"female", rating:0, col:"green", dob:"22/05/1982", car:"true"},
+    {id:4, name:"Brendon Philips", progress:100, gender:"male", rating:1, col:"orange", dob:"01/08/1980"},
+    {id:5, name:"Margret Marmajuke", progress:16, gender:"female", rating:5, col:"yellow", dob:"31/01/1999"},
+    {id:6, name:"Frank Harbours", progress:38, gender:"male", rating:4, col:"red", dob:"12/05/1966", car:1},
+	];
+	
+	var table = new Tabulator("#example-table", {
+    data:tabledata,           //load row data from array
+    layout:"fitColumns",      //fit columns to width of table
+    responsiveLayout:"hide",  //hide columns that dont fit on the table
+    tooltips:true,            //show tool tips on cells
+    addRowPos:"top",          //when adding a new row, add it to the top of the table
+    history:true,             //allow undo and redo actions on the table
+    pagination:"local",       //paginate the data
+    paginationSize:7,         //allow 7 rows per page of data
+    movableColumns:true,      //allow column order to be changed
+    resizableRows:true,       //allow row order to be changed
+    initialSort:[             //set the initial sort order of the data
+        {column:"name", dir:"asc"},
+    ],
+    columns:[                 //define the table columns
+        {title:"Name", field:"name", editor:"input"},
+        {title:"Task Progress", field:"progress", hozAlign:"left", formatter:"progress", editor:true},
+        {title:"Gender", field:"gender", width:95, editor:"select", editorParams:{values:["male", "female"]}},
+        {title:"Rating", field:"rating", formatter:"star", hozAlign:"center", width:100, editor:true},
+        {title:"Color", field:"col", width:130, editor:"input"},
+        {title:"Date Of Birth", field:"dob", width:130, sorter:"date", hozAlign:"center"},
+        {title:"Driver", field:"car", width:90,  hozAlign:"center", formatter:"tickCross", sorter:"boolean", editor:true},
+    ],
+});
+
+//initialize table
+var table = new Tabulator("#example-table", {
+    data:tabledata, //assign data to table
+    autoColumns:true, //create columns from data field names
+});
+	</script>
+    
+    <div class="footer">
+	<footer class="page-footer font-small bg-dark">
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center text-white py-3">© 2020 Copyright:
+			<a href="https://frozen.com/" class="text-white"> Frozen.com</a>
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+</div>
+
+    
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
